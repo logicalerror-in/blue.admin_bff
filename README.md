@@ -2,6 +2,7 @@
 
 관리자 Frontend를 위한 Backend For Frontend 저장소입니다.
 
+
 ## 역할
 
 - Admin Frontend 전용 API 제공
@@ -12,11 +13,6 @@
 - downstream으로 access token 전달
 - frontend 요구에 맞춘 응답 조합
 
-## 기술 후보
-
-- Node.js
-- TypeScript
-- NestJS 우선 후보
 
 ## 책임 경계
 
@@ -25,9 +21,24 @@
 - service-specific permission을 최종 판단하지 않습니다.
 - business authorization을 소유하지 않습니다.
 
-## 관련 저장소
 
-- `blue.admin_front`
-- `blue.admin_auth`
-- `blue.admin_gateway`
-- `blue.iac_etf`
+## 기술
+
+- NestJS
+- TypeScript
+- Node.js
+
+
+## API
+
+- `GET /health`
+- `GET /api/me`
+
+현재 인증은 mock 상태입니다.
+
+
+## 로컬 실행
+
+```bash
+npm install
+npm run start:dev
